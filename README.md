@@ -1,5 +1,7 @@
 # Babbybel
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/BuBuaBu/babbybel.svg)](https://greenkeeper.io/)
+
 Runtime transpiler for harmony modules support
 
 ## Why
