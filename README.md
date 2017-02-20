@@ -1,6 +1,6 @@
 # Babbybel
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/BuBuaBu/babbybel.svg)](https://greenkeeper.io/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/BuBuaBu/babbybel.svg)](https://greenkeeper.io/) [![Quality Gate](https://sonarqube.com/api/badges/gate?key=bubuabu:babbybel)](https://sonarqube.com/dashboard/index/bubuabu:babbybel)
 
 Runtime transpiler for harmony modules support
 

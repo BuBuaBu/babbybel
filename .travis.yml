@@ -1,6 +1,25 @@
-language: node_js
+sudo: required
+language: java
 node_js:
 - '6'
+env:
+- NODE_VERSION=6
+addons:
+  sonarqube:
+    token:
+      secure: IcidzMC74u+ePAHvZhYeSZo7VW7EXsRqLygTBOvGIo3r70fj5kvDTyFgBjBF2ZrBbGZ2DXTToguG67Q9AyBK4LNSdf+pwVx1nSXFbp5O144sze0pr4Lku1rL8x9ICB0mY7RlSlHTwpbz6xPbb1tJnepfvWZoTk+8qMwLpwCGtdVYQMq2EPdFgHXRFPdIykiBRbYF8pX4N1vuvellL7JcCObpXZ1NTqXcLMncObC2tywT6DwgKOPEDT8p5oZJ8TIeICbf14Qk7ubssw3EQR+iHE3PhTdYAGf0wsurWIK9ONzx/HNrnjVuj40xeTIA/B+khcU/4xEa1SF67X/6QgSsrGFoerA0OSpAAp+62PxJeS+I/FkhDz8N/6k9fAMEKyZH0BhFJIy2YVsmqI6Qv/XnN+NO30X3RiamADKRRtfP8X+DwGwZs7FYmadqNbpYaPpIewVfA6dpuH+eKT/NAL/jnPDvq9anwCKSJ86XgS34E5siNzbaWAZcRSsm4JP7FudPfikrLt1N1+rZbNetElb3l2xBp7+UxE6OzvKU77+/b80r/uCJLSoqYX7+dRI/ya4KxIbI9cd15YcouGUHCO7Zne7jNneD0SfUZss6hBRQB2VQjs7/KYynPBs9j8u6iYtYJhd33GHW7YHru9vl82Ul3qpPoiJ8SedvZolWtflqkDM=
+jdk:
+- oraclejdk8
+install:
+- nvm install $NODE_VERSION
+- npm install
+script:
+- nvm use $NODE_VERSION
+- npm test
+- sonar-scanner
+cache:
+  directories:
+  - "$HOME/.sonar/cache"
 deploy:
   provider: npm
   email: henriet@bubuabu.org
