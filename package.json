@@ -1,0 +1,32 @@
+{
+  "name": "babbybel",
+  "version": "0.4.0",
+  "description": "Runtime transpiller for to add Harmony modules",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js test",
+    "test": "nyc mocha --compilers js:./index \"test/**/*-test.js\"",
+    "posttest": "nyc check-coverage --lines 70 && npm run lint"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:BuBuaBu/babbybel.git"
+  },
+  "author": "Vivien HENRIET <bubuabu@bubuabu.org>",
+  "license": "ISC",
+  "dependencies": {
+    "node-hook": "^0.4.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "dirty-chai": "^1.2.2",
+    "eslint": "^3.8.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.0.1",
+    "mocha": "^3.1.2",
+    "nyc": "^10.1.2"
+  }
+}
