@@ -21,7 +21,7 @@
     "node-hook": "^0.6.1"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
+    "chai": "^4.0.2",
     "dirty-chai": "^1.2.2",
     "eslint": "^3.8.1",
     "eslint-config-airbnb": "^15.0.0",
