@@ -1,6 +1,6 @@
 {
   "name": "babbybel",
-  "version": "0.6.0",
+  "version": "1.0.0",
   "description": "Runtime transpiller for to add Harmony modules",
   "main": "index.js",
   "scripts": {
