@@ -36,8 +36,8 @@ const transformations = [
     apply: (match) => `module.exports.__esModule = true; const ${match[1]} = module.exports.${match[1]} = class ${match[1]} ${match[2]}`
   },
   {
-    regexp: /^\s*export\s+function\s+([a-zA-Z0-9-_]*)\s+(.*)\s*$/,
-    apply: (match) => `module.exports.__esModule = true; module.exports.${match[1]} = ${match[1]}; function ${match[1]} ${match[2]}`
+    regexp: /^\s*export\s+(async\s+|)function\s+([a-zA-Z0-9-_]*)\s+(.*)\s*$/,
+    apply: (match) => `module.exports.__esModule = true; module.exports.${match[2]} = ${match[2]}; ${match[1]} function ${match[2]} ${match[3]}`
   }
 ]
 
