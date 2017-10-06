@@ -24,7 +24,7 @@
     "chai": "^4.0.0",
     "dirty-chai": "^2.0.0",
     "eslint": "^4.0.0",
-    "eslint-config-airbnb": "^15.0.0",
+    "eslint-config-airbnb": "^16.0.0",
     "eslint-plugin-import": "^2.3.0",
     "mocha": "^3.4.0",
     "nyc": "^11.0.2"
