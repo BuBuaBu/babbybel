@@ -18,7 +18,7 @@
   "author": "Vivien HENRIET <bubuabu@bubuabu.org>",
   "license": "ISC",
   "dependencies": {
-    "node-hook": "^0.6.1"
+    "node-hook": "^1.0.0"
   },
   "devDependencies": {
     "chai": "^4.0.0",
